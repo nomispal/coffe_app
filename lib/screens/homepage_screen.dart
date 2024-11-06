@@ -20,7 +20,9 @@ class HomePage extends StatelessWidget{
                       Container(
                         width: double.infinity,
                         height:  height*0.233,
+                        color: Color(0xffe6c038),
                         child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("NGO",
                             style: TextStyle(
@@ -39,6 +41,70 @@ class HomePage extends StatelessWidget{
                           ],
                         ),
                       ),
+                      Container(
+                        width: double.infinity,
+                        height: 150,
+                        child: Stack(
+                          children: [
+                            Center(
+                              child: RotatedBox(quarterTurns: 3,
+                              child: Text("TOP PICK",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),),),
+                            ),
+                            Align(alignment: Alignment.centerRight,
+                            child: Container(
+                              width: 5,
+                                height: 30,
+                              decoration: BoxDecoration(
+                                color: Color(0xffe6c038),
+                                borderRadius: BorderRadius.only(topLeft: Radius.circular(10),
+                                bottomLeft: Radius.circular(10)
+                                )
+                              ),
+                            ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        width: double.infinity,
+                        height: 100,
+                        child: Stack(
+                          children: [
+                            Center(
+                              child: RotatedBox(quarterTurns: 3,
+                                child: Text("Trending",
+                                  style: TextStyle(
+                                    color: Colors.black45,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),),),
+                            )
+                          ],
+                        ),
+
+                      ),
+                      Container(
+                        width: double.infinity,
+                        height: 150,
+                        child: Stack(
+                          children: [
+                            Center(
+                              child: RotatedBox(quarterTurns: 3,
+                                child: Text("Latest",
+                                  style: TextStyle(
+                                    color: Colors.black45,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),),),
+                            )
+                          ],
+                        ),
+
+                      )
                     ],
                   ),
                 )),
