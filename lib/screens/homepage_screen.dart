@@ -138,6 +138,37 @@ class HomePage extends StatelessWidget{
                           SizedBox(width: 15,),
                           Image.asset("assets/filter.png")
                         ],
+                      ),
+                      Padding(padding: EdgeInsets.only(top: 50,bottom: 100),
+                      child: Stack(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(10),
+                             width: double.infinity,
+                            height: 120,
+                            decoration: BoxDecoration(
+                              color: Color(0xffF5F0E3),
+                              borderRadius: BorderRadius.only(topRight: Radius.circular(30))
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Monthly\nCoffe",
+                                style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),
+                                ),
+                                Spacer(),
+                                Row(
+                                  children: [
+                                    Text("/month",
+                                    style: TextStyle(color: Colors.grey),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
                       )
                     ],
                   ),
