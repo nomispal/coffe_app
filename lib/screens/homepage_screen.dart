@@ -103,13 +103,46 @@ class HomePage extends StatelessWidget{
                             )
                           ],
                         ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(topLeft: Radius.circular(15),)
+                        ),
+                        child: Image(image: AssetImage("assets/shopimg.png")),
+                        width: 60,
+                          height:60,
+                      ),
 
+                    ],
+                  ),
+                )
+            ),
+            Expanded(flex: 3,
+              child: SingleChildScrollView(
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 20,vertical: 40),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start ,
+                    children: <Widget>[
+                      Row(
+                        children: [
+                          Text("Coffee",
+                          style: TextStyle(
+                            fontSize:30,
+                            fontWeight: FontWeight.bold,
+                          ),),
+                          Spacer(),
+                          Image.asset("assets/search.png"),
+                          SizedBox(width: 15,),
+                          Image.asset("assets/filter.png")
+                        ],
                       )
                     ],
                   ),
-                )),
-            Expanded(flex: 3,
-              child: Container(),
+                ),
+              ),
             )
           ],
         ),
