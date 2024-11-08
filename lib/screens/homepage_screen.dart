@@ -159,11 +159,18 @@ class HomePage extends StatelessWidget{
                                 Spacer(),
                                 Row(
                                   children: [
+                                    Text("\$12.99",
+                                      style: TextStyle(color: Color(0xffe6c038),
+                                          fontWeight: FontWeight.bold,
+                                      fontSize: 22),
+                                    ),
                                     Text("/month",
                                     style: TextStyle(color: Colors.grey),
-                                    )
+                                    ),
                                   ],
-                                )
+                                ),
+
+
                               ],
                             ),
                           )
